@@ -1,0 +1,104 @@
+body{
+    font-family: Arial;
+}
+
+#wrapper{
+    width: 100%;
+}
+table{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+caption{
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+
+#table1 th,#table1 tr,#table1 td{
+    border: 1px solid white;
+}
+#table1 td.green,th.green{
+    background: linear-gradient(to right,#99D52F,#7CC142);
+    border-radius: 5px 0 0 5px;
+    /*background-color: #99D52F;*/
+    color: white;
+    padding: 20px;
+    font-weight: normal;
+    /*text-shadow: 1px 1px 0.1em;*/
+    text-shadow:1px 1px #5FA033;
+}
+#table1 th.green{
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(to bottom,#99D52F,#7CC142);
+
+}
+#table1 td{
+    color:#666681 ;
+    background-color: #DEF3CA;
+    font-weight: bold;
+}
+#table1 tfoot td{
+     color: #9CD009;
+     font-size: 30px;
+     text-shadow: 1px 1px black;
+     background-color: white;
+}
+#table1 tfoot td:first-child{
+    color: #66697F;
+    /*font-size: 30px;*/
+    font-size: 15px;
+    text-shadow: none;
+    /*background-color: white;*/
+}
+.arrow{
+    background-image: url("../img/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#table2{
+    font-family: "Times New Roman";
+    border-collapse: collapse;
+    border-top: 2px slategrey;
+    border-bottom: 2px slategrey;
+}
+#table2 thead tbody tfoot{
+    border-collapse: collapse;
+}
+#table2 th:not(:first-child){
+    background-color: black;
+    color: white;
+    padding: 30px 10px 30px 10px;
+}
+#table2 tr td:not(:first-child):not(:nth-child(2)){
+    border-left: 1px solid grey;
+    padding: 10px 10px 10px 10px;
+}
+#table2 tbody tr td:not(:first-child){
+     background-color: #F0F0F0;
+     text-transform: uppercase;
+}
+#table2 tbody tr td:last-child{
+margin-top:10px;
+}
+#table2 tbody tr td:first-child{
+    font-weight:bold ;
+    background-color: #F9F9F9;
+    text-align: right;
+}
+#table2 tfoot td:first-child{
+    color:#888888;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#table2 tfoot td:not(:first-child){
+    color:#E97F17;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+}

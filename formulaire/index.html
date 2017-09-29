@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="container">
+    <h1>Formulaire de paiement</h1>
+    <!--<fieldset>
+        <legend>test</legend>
+    </fieldset>-->
+    <form action="">
+        <div class="step">
+            <h3>Step1: Votre identité</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="input-form">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$"
+                                   placeholder="exemple@domaine.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="input-form">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="nom">Nom</label>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="text" id="nom" placeholder="Prénom et Nom">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="input-form">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="tel">Date de naissance</label>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="date" id="date_naissance" placeholder="ex: +3375500000000">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="input-form">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="tel">Téléphone</label>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="tel" id="tel" pattern="" placeholder="ex: +3375500000000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Step2: Adresse de livraison</h3>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="input-form">
+                        <label for="adresse">Adresse</label>
+                        <textarea name="adresse" id="adresse" cols="30" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="input-form">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="cp">Code postal</label>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <input type="text" pattern="[0-9]{5}" id="cp">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="input-form">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="pays">Pays</label>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <input type="text" id="pays">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Step3: Informations CB</h3>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="input-form">
+                        <div class="col-lg-3 col-md-12 col-sm-12 text-center">
+                            <label>Type de carte bancaire</label><br>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 text-left">
+                            <input type="radio" id="visa" name="type_carte" value="visa"> <img src="img/visa.gif"> <label
+                                class="noCss">VISA</label>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 text-left">
+                            <input type="radio" id="amex" name="type_carte"> <img src="img/amex.gif" alt="amex"> <label class="noCss">AmEx</label>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 text-left">
+                            <input type="radio" id="mastercard" name="type_carte"> <img src="img/mastercard.gif"> <label
+                                class="noCss">Mastercard</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="input-form">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="num_carte">N° de carte</label>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <input type="text" pattern="[0-9]{16}|[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+                                   placeholder="XXXXXXXXXXXXXXXX" id="num_carte">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="input-form">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="code">Code sécurité</label>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <input type="text" pattern="[0-9]{3}" placeholder="XXX" id="code">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="input-form">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <label for="nom_porteur">Nom du porteur</label>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-sm-12">
+                            <input type="text" id="nom_porteur" placeholder="Même nom que sur la carte">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="button_achete">J'ACHETE</button>
+    </form>
+</div>
+</body>
+</html>

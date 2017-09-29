@@ -1,0 +1,14 @@
+$Primarycolor:#6E6542;
+@mixin rounded{
+  border-radius: 5px;
+}
+.main{
+ color: $Primarycolor;
+  font-size: 0.3em;
+  a{
+    font-weight: bold;
+    font-size: large;
+    @include rounded
+
+  }
+}

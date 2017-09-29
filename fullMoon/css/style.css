@@ -1,0 +1,143 @@
+p{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+img{
+    margin-right: 5px;
+}
+.bg-faded {
+    background-color: #00AFB4;
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+header div div>img{
+    width: 100%;
+}
+nav{height: 100%;}
+.slider{
+    padding: 5px;
+    border: 1px grey solid;
+}
+.titre_slider{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    opacity: 0.5;
+    vertical-align: middle;
+}
+.titre_slider > p{
+    color:#E8E8E8;
+    position: absolute;
+    top:30%;
+    left: 2%;
+ }
+.list-slide{
+    border-bottom: 1px dashed #68918D;
+}
+.img-thumbnail{
+    width: 120px;
+    height: 100px;
+}
+.border{
+    border: 1px solid black !important;
+    /*margin-left: 0;*/
+    /*margin-right: 0;*/
+    /*box-sizing: border-box !important;*/
+}
+.section{
+    /*padding: 0;*/
+    /*box-sizing: border-box !important;*/
+}
+.mycard{
+    /*float: left;*/
+    margin-top:10px;
+    padding: 0;
+    /*margin-left: 0;*/
+    /*margin-right: 0;*/
+    /*border: none;*/
+    background-color:#EEEEEE ;
+    /*margin: 3px;*/
+    /*padding: 5px;*/
+    /*padding-left: 0 !important;*/
+}
+.mycard .card-header{
+    width: 100%;
+    /*border: 1px red solid;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*max-width: 100%;*/
+    /*vertical-align: middle;*/
+    /*height: auto;*/
+    border: none;
+    background-color: #EEEEEE;
+}
+.card-header img{
+    /*border: 1px red solid;*/
+    width:40px;
+}
+/*#surcharge BS*/
+.card-title{
+    /*border: 1px red solid;*/
+    margin-bottom: 0px;
+    color: #1A918D;
+}
+.card-block{
+    /*padding: 0;*/
+}
+.card-header{
+    /*margin: 0;*/
+    padding: 10px;
+    /*width: 50%;*/
+}
+
+.card a{
+    color: #00acc1;
+    padding:20px;
+}
+.card a:after{
+    content: url("../img/arrow_bullet.png");
+    width:32px;
+    margin-left: 20px;
+}
+.card-header h4{
+    /*margin: 0;*/
+    /*padding: 0;*/
+    font-size: medium;
+    /*width: 50%;*/
+}
+.card-header-green{
+    background-color: lightseagreen;
+    color: white;
+border-radius: 0;
+    padding: 5px;
+}
+.card-block-right{
+    color: darkgrey;
+    background-color: lightgray;
+}
+/*.card-block-right img {*/
+.card-block-right img[alt="Card image cap"]{
+   width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+div.badge{
+    float: right;
+    line-height: inherit;
+}
+blockquote{
+    font-style: normal;
+    margin-left: 10px;
+    font-family:"" ;
+}
+footer{
+    color: white;
+    background-color: #484848;
+}

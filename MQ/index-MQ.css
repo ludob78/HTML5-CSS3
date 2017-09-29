@@ -1,0 +1,28 @@
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+div {
+  border: 1px solid;
+  box-sizing: border-box; }
+
+@media all and (min-width: 1000px) {
+  .col-lg-6 {
+    width: 50%;
+    background-color: skyblue;
+    display: inline; }
+
+  .col-lg-12 {
+    width: 100%;
+    background-color: darkgreen;
+    display: inline; } }
+@media all and (max-width: 600px) {
+  .col-md-12 {
+    width: 100%;
+    background-color: red; }
+
+  .div1 {
+    background-color: greenyellow; } }
+
+/*# sourceMappingURL=index-MQ.css.map */

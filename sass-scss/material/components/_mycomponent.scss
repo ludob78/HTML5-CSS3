@@ -1,0 +1,70 @@
+ludo
+{
+  width: 100%;
+  div#div1 {
+    width: 100%;
+    background-color: $primary-color;
+    text-align: center;
+  }
+  div.div2 {
+    width: 100%;
+    background-color: $primary-color-light;
+    text-align: center;
+  }
+  div {
+    a:nth-child(1) {
+      text-align: right;
+      width: 100%;
+      color: darkgoldenrod;
+    }
+    a {
+      text-align: left;
+      width: 100%;
+      color: deeppink;
+      &:hover{color: grey;}
+    }
+    #div3{
+    border: 1px solid blueviolet;
+      &div1{
+        background-color: hotpink;
+        text-align: center;
+      }
+    }
+  }
+  form {
+    border: none;
+    fieldset {
+      div {
+        text-align: right;
+        background-color: $primary-color-light;
+      }
+    }
+  }
+  .alert{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    &.alert-success{
+      background-color:$bg-success !important;
+    }
+    &.alert-warning{
+      background-color: $bg-warning !important;
+    }
+    &.alert-danger{
+      background-color: $bg-error !important;
+    }
+  }
+  .progress{
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 5px;
+    height: 20%;
+    //text-align: center;
+    .progress-bar{
+      width: 80%;
+      background-color: #00acc1;
+      height: 100%;
+    }
+  }
+}

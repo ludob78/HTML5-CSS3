@@ -1,0 +1,123 @@
+*{
+ font-size: 50px;
+}
+/*tag de l'élément'*/
+body{
+    width: 100%;
+}
+div{
+    font-family: Arial;
+}
+
+#idelement{
+    font-family: "Times New Roman";
+    font-size: 40px;
+}
+/*par class*/
+.classname{
+    font-family: C39T36L;
+    font-size: 30px;
+    background-color: yellow;
+}
+/*la div ayant l'id div1 et tous les P contenu dans cette div'*/
+/*espace = sous élément confondu*/
+div#div1 p{
+    background-color: red;
+}
+div#div2 p{
+    background-color: blue;
+}
+/*class titi direct dans toto*/
+#toto > .titi{
+    background-color: fuchsia;
+}
+/*a et b sont des constantes et n est variable*/
+div:nth-child(b){
+}
+div:nth-child(an){
+}
+div:nth-child(an+b){}
+
+body > p:nth-child(1){
+    border: 3px solid black;
+}
+body > p:first-child{
+    border:3px solid forestgreen;
+}
+body >p:last-child{
+    border:3px solid orange;
+}
+/*a:before{*/
+    /*content: "avant ";*/
+/*}*/
+/*a:after{*/
+    /*content: " apres";*/
+/*}*/
+div.Error:after{
+    background-color: red;
+    content: "*";
+}
+div.Success:after{
+    background-color:green;
+    content: "*";
+}
+/*element[propriété=valeur]*/
+a[href="https://fr.yahoo.com/"]{
+    color: red;
+}
+div > a[href="https://www.google.fr/?gws_rd=ssl"]{
+    color: blue;
+}
+/*qui commence par*/
+div > a[href^="https://www.google.fr/?gws_rd=ssl"]{
+    color: blue;
+}
+input:focus{
+    background-color: #72aa21;
+}
+#wrapper{
+    margin: auto;
+    width: 90%;
+}
+table{
+    margin: auto;
+    width: 100%;
+}
+table caption{
+    background: linear-gradient(red, yellow); /* Standard syntax */
+    /*margin: 50px auto 50px auto;*/
+    padding: 30px 0 30px 0; /*haut droite bas gauche*/
+    /*padding: 30px 0px; !*haut bas *!*/
+    /*padding: 5px;*/
+    text-align: left;
+}
+table,th,tr,td{
+    border: 1px solid black;
+}
+table thead th{
+    text-align: center;
+    background-color: #88888a;
+    color: white;
+    text-transform: capitalize;/*premiere lettre en majuscule*/
+}
+/*impair ou even */
+/*table tbody tr:nth-child(even){*/
+table tbody tr:nth-child(2n){
+    background-color: lightgray;
+}
+table tbody tr:nth-child(1){}
+/*pair ou odd*/
+/*table tbody tr:nth-child(odd){*/
+table tbody tr:nth-child(2n+1){
+     background-color: darkgrey;
+ }
+table tbody tr:not(:first-child){
+    background-color: lightgray;
+}
+table thead th{
+    background-color: #88888a;
+}
+table td[toto="price"]{
+    text-align: right;
+    background-color: red;
+}

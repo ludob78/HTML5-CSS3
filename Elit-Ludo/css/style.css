@@ -1,0 +1,348 @@
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v8/cSNs3NwpEgPVRQzvkh3NeQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+/* h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+} */
+html,body{
+  /*background-color: black;*/
+  /*margin: 50px;*/
+  height: 150%;
+  background-image: url("../img/main_bg.gif");
+  margin:auto;
+  font-family: 'Nunito';
+}
+#container{
+  height: 100%;
+  /*background-color: red;*/
+}
+#header{
+  background-color: black;
+  width: 100%;
+  height: 3%;
+  /*margin:auto;*/
+  padding-top: 15px;
+  box-sizing: border-box;
+  /*position: fixed;*/
+}
+#header > ul{
+  /*background-color: blue;*/
+  width: 90%;
+  margin: 0px 10px 10px 210px;
+  /*margin-left: 50px;*/
+  color: grey;
+  list-style-type: none;
+  box-sizing: border-box;
+
+}
+#header > ul > li{
+  display: inline;
+  margin-left: 50px;
+  padding: 7px;
+}
+#header > ul > li:hover{
+  padding: 7px;
+  background-color: red;
+  width:100%;
+  color: white;
+  border-radius: 2px;
+  /*display: inline;*/
+}
+#entete_logo{
+  /*background-color: blue;*/
+  width: 60%;
+  margin:auto;
+  height: 3%;
+  margin-top:15px;
+}
+#entete_logo div{
+  /*margin-top: auto;*/
+  /*vertical-align:  center;*/
+  width: 50%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  /*background-color: green;*/
+}
+#logo{
+  /*border: blue solid 1px;*/
+  /*background-color: blue;*/
+    position: relative;
+
+}
+#logo > h1{
+  color: white;
+  font-size: 45px;
+   letter-spacing: 3px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  /*vertical-align: middle;*/
+  /*position:relative;*/
+}
+#logo > h1 > span:nth-child(1){
+  color: red;
+  font-size: 60px;
+  /*position:relative;*/
+}
+#logo > span:nth-child(2){
+  color: darkgrey;
+  font-size: 12px;
+  letter-spacing: 0.005em;
+  position: absolute;
+  top:20px;
+  left: 100px;
+}
+#entete_logo div span{
+/*color: red;*/
+}
+#entete_logo div:nth-child(1)>p{
+ /*vertical-align: middle;*/
+ /* color: grey;
+ padding-top: 1%;*/
+ /*font-size: 10px;*/
+ /*font-weight: bold;*/
+ /*letter-spacing: 0px;*/
+}
+#entete_logo div:nth-child(2){
+   text-align: right;
+   margin-top:15px;
+  /*border: 1px blue solid;*/
+  /*vertical-align: middle;*/
+}
+#entete_logo div:nth-child(2)>ul{
+  /*border: 1px blue solid;*/
+  list-style-type: none;
+  /*margin: 0;*/
+}
+#entete_logo div:nth-child(2)>p{
+  /*border: 1px blue solid;*/
+  color: white;
+  /*margin: 0;*/
+}
+#entete_logo div:nth-child(2)>p >span{
+  /*border: 1px blue solid;*/
+  color: red;
+  /*margin: 0;*/
+}
+#entete_logo div:nth-child(2)>ul>li{
+  display: inline;
+  color: darkgrey;
+  letter-spacing: 0.0005em;
+  /*border-left: 1px solid lightgrey;*/
+}
+#slider{
+  /*background-color:red;*/
+  width: 60%;
+  /*margin:auto;*/
+  height: 23%;
+  background-color: white;
+  margin:40px auto 40px auto;
+  border-radius: 5px;
+}
+#slider > ul{
+  width: 95%;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+  padding: 10px;
+  list-style-type: none;
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
+}
+#slider > ul >li{
+  margin: 10px;
+  padding: 10px;
+  display: inline;
+  /*margin-left: 50px;*/
+}
+#slider > ul >li:nth-child(1){
+  margin-left: 0px;
+}
+#slider > ul > li > input{
+  margin-right: 0px;
+  /*background-color: blue;*/
+  border-radius: 5px;
+  height: 25px;
+}
+#slider > ul >li:hover{
+  border-radius: 5px;
+  background-color: black;
+}
+#slider_picture{
+  /*background-color: red;*/
+  /*margin:10%;*/
+  /*background-position: center;*/
+  background-image: url("../img/santorin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 93%;
+  height: 74%;
+  margin: 3% auto 1% auto;
+  box-shadow: 0px 10px 20px black;
+}
+#mainsection{
+   background-color:yellow;
+   width: 60%;
+   height: 50%;
+   /*float: left;*/
+   margin:auto;
+}
+nav{
+  background-color:green;
+  float: left;
+  width: 35%;
+  /*margin:auto;*/
+  height: 100%;
+}
+nav div{
+  /*margin: auto;*/
+  width: 90%;
+  padding-left: 5%;
+  margin: 0 auto 20px auto;
+  background-color: white;
+  border-radius: 5px;
+  /*border:1px solid blue;*/
+  height: 40%;
+}
+nav div >h3{
+  /*box-sizing: border-box;*/
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+[id^="img1"]{
+  background-color: red;
+  width: 45%;
+  height: 40%;
+  float: left;
+  margin: 2% 1% 2% 1%;
+  box-sizing: border-box;
+  background-size: cover;
+}
+[id^="img2"]{
+  background-color: red;
+  width: 30%;
+  height: 25%;
+  float: left;
+  margin: 2% 1% 2% 1%;
+  box-sizing: border-box;
+  background-size: cover;
+}
+nav div >p{
+  text-align: center;
+font-size: 12px;
+}
+#img11{
+  background-image: url("../img/banner_1.gif");
+}
+#img12{
+  background-image: url("../img/banner_2.gif");
+}
+#img13{
+  background-image: url("../img/banner_3.gif");
+}
+#img14{
+  background-image: url("../img/banner_4.gif");
+}
+#img21{
+  background-image: url("../img/flickr_1.jpg");
+}
+#img22{
+  background-image: url("../img/flickr_2.jpg");
+}
+#img23{
+  background-image: url("../img/hello.png");
+}
+#img24{
+  background-image: url("../img/hello.png");
+}
+#img25{
+  background-image: url("../img/hello.png");
+}
+#img26{
+  background-image: url("../img/hello.png");
+}
+#img27{
+  background-image: url("../img/hello.png");
+}
+#img28{
+  background-image: url("../img/hello.png");
+}
+#img29{
+  background-image: url("../img/hello.png");
+}
+section{
+  background-color:pink;
+  float: left;
+  width: 65%;
+  /*margin:auto;*/
+  height: 100%;
+  box-sizing: border-box;
+}
+section div{
+    /*margin: auto;*/
+    float: left;
+  width: 40%;
+  margin: 0 auto 10px auto;
+  background-color: blue;
+  border:1px solid white;
+  height: 50%;
+}
+section div:nth-child(3){
+  width: 80%;
+  height: 5%;
+  margin: auto;
+}
+section div ul{
+    list-style-type: none;
+}
+section div li{
+  display: inline;
+  background-color: black;
+  color:red;
+}
+section div li:hover{
+  border-radius: 5px;
+  padding: 5px;
+  display: inline;
+  background-color: red;
+  color:white;
+}
+footer{
+  margin: 20px auto 0 auto;
+  background-color:yellow;
+  /*float: left;*/
+  width: 100%;
+  height: 5%;
+  /*margin:auto;*/
+}

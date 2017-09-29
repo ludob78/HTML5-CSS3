@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div>Div de base</div>
+    <div id="idelement">Id de l'élément</div>
+    <div class="classname">Class de l'élément</div>
+    <div id="div1">
+        <p>paragraphe de la div1</p>
+        <div id="div2">
+            <p>paragraphe de la div2</p>
+        </div>
+    </div>
+    <div id="toto">
+        <div id="id2">
+            <div class="titi">TITI</div>
+        </div>
+        <div class="titi">TITI</div>
+    </div>
+    <!--nth-child-->
+    <p>Element1</p>
+    <p>Element2</p>
+    <p>Element3</p>
+    <p>Element4</p>
+    <p>Element5</p>
+    <p>Element6</p>
+
+    <a href="">text link</a>
+
+    <!--after avec class sur input-->
+    <form action="">
+        <label for="email">Email</label>
+    <div class="Error"><input type="text" id="email"></div>
+        <label for="nom">Nom</label>
+        <div class="Success"><input type="text" id="nom"></div>
+    </form>
+
+    <div>
+    <a href="https://www.google.fr/?gws_rd=ssl">google</a>
+    <a href="https://fr.yahoo.com/">yahoo</a>
+    </div>
+<div id="wrapper">
+    <table>
+        <caption>Tableau style1</caption>
+        <thead>
+            <tr>
+                <!--<th>&nbsp;&eacute;</th>-->
+                <th>rowspan</th>
+                <th>nom</th>
+                <th>profession</th>
+                <th>Salaire</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3"></td>
+            <td>Thomas</td>
+            <td>dev</td>
+            <td toto="price">55</td>
+        </tr>
+        <tr>
+
+            <td>Sandrine</td>
+            <td>dev</td>
+            <td toto="price">60</td>
+        </tr>
+        <tr>
+               <td>Ludo</td>
+            <td>dev</td>
+            <td toto="price">70</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3">Total en colspan</td>
+            <td toto="price">165</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>

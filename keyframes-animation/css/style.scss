@@ -1,0 +1,126 @@
+body {
+  //position: relative;
+
+  @keyframes animName {
+    from {
+      background-color: black;
+      left: 100%;
+    }
+    to {
+      background-color: yellow;
+      left: 50%;
+      transform: rotate(360deg);
+    }
+  }
+  .animated {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background-color: yellow;
+    animation-fill-mode: forwards; /*affiche le dernier état de l'animation ou backwards pour le premier*/
+    animation-name: animName;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  @keyframes animName2 {
+    0% {
+      background-color: orange;
+      left: 99%;
+      transform: rotate(360deg);
+    }
+    25% {
+      background-color: blue;
+      left: 50%;
+      transition: left 2s,rotate 1s;
+      transform: rotate(720deg);
+    }
+    50% {
+      background-color: pink;
+      left: 1%;
+      transform: rotate(360deg);
+    }
+    75% {
+      background-color: yellow;
+      left: 50%;
+      transform: rotate(720deg);
+    }
+    100% {
+      left: 99%;
+      transform: rotate(0deg);
+      background-color: orange;
+    }
+  }
+
+  .animated2 {
+    position: absolute;
+    background-color: yellow;
+    animation-name: animName2;
+    animation-duration: 5s;
+    //animation-delay: 1s;
+    top: 20%;
+    left: 99%;
+  }
+  @keyframes animName3 {
+    0% {
+      color: white;
+      right: 100px;
+      background-color: green;
+    }
+    100% {
+      color: black;
+      right: 100%;
+      background-color: yellow;
+    }
+  }
+  #div1 {
+    animation-timing-function: linear;
+    top: 30%;
+  }
+  #div2 {
+    animation-timing-function: ease;
+    top: 35%;
+  }
+  #div3 {
+    animation-timing-function: ease-in;
+    top: 40%;
+  }
+  #div4 {
+    animation-timing-function: ease-out;
+    top: 45%;
+  }
+  #div5 {
+    animation-timing-function: ease-in-out;
+    top: 50%;
+  }
+  .animated3 {
+    margin: 10px;
+    position: absolute;
+    background-color: blue;
+    -webkit-animation-name: animName3;
+    -moz-animation-name: animName3;
+    -o-animation-name: animName3;
+    animation-name: animName3;
+    animation-duration: 5s;
+  }
+}
+
+.transition{
+  position: absolute;
+  top: 60%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-transition: width 5s;
+  -moz-transition: width 5s;
+  //-ms-transition: width 5s;
+  -o-transition: width 5s;
+  transition: width 5s linear
+            ,background-color 2s ease 3s
+            ,opacity 2s;
+  opacity: 1;
+}
+.transition:hover{
+  opacity: 0.3;
+  background-color: yellow;
+  width: 500px;
+}
